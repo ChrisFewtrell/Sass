@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="presentation.css"/>
+    <link rel="stylesheet" href="prettify/src/prettify.css"/>
+
+    <script src="prettify/src/prettify.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+    <script type="text/javascript">
+        var loadfileAttribute = "loadFile";
+
+        var loadFile = function () {
+            var $el = $(this);
+            var filename = $el.attr(loadfileAttribute);
+            console.log("Load file:" + filename);
+            var promise = $.get(filename, null, function(data) {
+                if (typeof prettyPrint === "undefined") {
+                    console.log("Prettyprint not loaded");
+                    $el.text(data);
+                    return;
+                }
+                
+                console.log("prettyPrint");
+                var html = prettyPrintOne(data);
+                $el.html(html);
+            });
+            return promise;
+        };
+
+        var loadAllFiles = function () {
+            var elementsToLoad = $("[" + loadfileAttribute + "]");
+            
+            console.log("load all files:" + elementsToLoad.length);
+            var deferreds = $.map(elementsToLoad, function (el, index) {
+                loadFile.apply(el).then(function () {
+                    
+                });
+            });
+
+            $.each(deferreds, function (index, val) {
+                val.then();
+            });
+        };
+
+        $(loadAllFiles);
+    </script>
+    
+    </head>
+<body>
+    <pre><code loadFile="presentation.css" class="prettyprint">
+
+    </code></pre>
+    
+    <pre><code loadFile="presentation.css" class="prettyprint">
+
+    </code></pre>
+</body>
+</html>
