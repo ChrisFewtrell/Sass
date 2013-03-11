@@ -28,4 +28,11 @@
     <setting name="CompileStyle">Nested</setting>
     <setting name="DebugInfo">False</setting>
   </file>
+  <file name="presentation.scss">
+    <setting name="Compile">True</setting>
+    <setting name="Minify">True</setting>
+    <setting name="OutputFolder"></setting>
+    <setting name="CompileStyle">Nested</setting>
+    <setting name="DebugInfo">False</setting>
+  </file>
 </web-workbench>
