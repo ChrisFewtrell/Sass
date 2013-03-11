@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<web-workbench>
+  <file name="variables-interpolation1.scss">
+    <setting name="Compile">True</setting>
+    <setting name="Minify">True</setting>
+    <setting name="OutputFolder"></setting>
+    <setting name="CompileStyle">Nested</setting>
+    <setting name="DebugInfo">False</setting>
+  </file>
+  <file name="variables.scss">
+    <setting name="Compile">True</setting>
+    <setting name="Minify">True</setting>
+    <setting name="OutputFolder"></setting>
+    <setting name="CompileStyle">Nested</setting>
+    <setting name="DebugInfo">False</setting>
+  </file>
+  <file name="variables-interpolation.scss">
+    <setting name="Compile">True</setting>
+    <setting name="Minify">True</setting>
+    <setting name="OutputFolder"></setting>
+    <setting name="CompileStyle">Nested</setting>
+    <setting name="DebugInfo">False</setting>
+  </file>
+  <file name="variables1.scss">
+    <setting name="Compile">True</setting>
+    <setting name="Minify">True</setting>
+    <setting name="OutputFolder"></setting>
+    <setting name="CompileStyle">Nested</setting>
+    <setting name="DebugInfo">False</setting>
+  </file>
+</web-workbench>

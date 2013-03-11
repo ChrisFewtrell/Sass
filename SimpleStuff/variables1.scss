@@ -1,0 +1,21 @@
+﻿#navbar {
+  $navbar-width: 600px;
+  $items: 3;
+  $navbar-color: #ce4dd6;
+
+  width: $navbar-width;
+  border: 5px solid $navbar-color;
+  float:left;
+
+  li {
+    width: $navbar-width/$items - 10px;
+	float:left;
+    background-color:
+      lighten($navbar-color, 20%);
+    &:hover {
+      background-color:
+        lighten($navbar-color, 10%);
+    }
+  }
+}
+

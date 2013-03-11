@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Simple Sassy Stuff</title>
+    <link rel="stylesheet" href="variables-interpolation.css"/>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+</head>
+<body>
+    <h1>Simple Sassy Features: Variables</h1>
+    <ul id="navbar"><li>Item 1</li><li>Item 2</li><li>Item 3</li></ul>
+    <pre>
+    <code class="prettyprint">
+@each $animal in puma, sea-slug, egret, salamander {
+  .#{$animal}-icon {
+    background-image: url('/images/#{$animal}.png');
+  }
+}
+    </code></pre>
+</body>
+</html>
