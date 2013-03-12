@@ -6,34 +6,22 @@
     <link rel="stylesheet" href="../presentation.css"/>
 
     <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
-
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+    <script src="../prettify/src/prettify.js"></script>
+    <script src="../prettify/src/lang-css.js"></script>
+    <script src="../JS/loadFile.js"></script>
 </head>
 <body>
     <h1>Simple Sassy Features: Variables</h1>
     <ul id="navbar"><li>Item 1</li><li>Item 2</li><li>Item 3</li></ul>
-    <pre>
-    <code class="prettyprint sass">
-#navbar {
-  $navbar-width: 600px;
-  $items: 3;
-  $navbar-color: #ce4dd6;
 
-  width: $navbar-width;
-  border: 5px solid $navbar-color;
-  float:left;
-
-  li {
-    width: $navbar-width/$items - 10px;
-	float:left;
-    background-color:
-      lighten($navbar-color, 20%);
-    &:hover {
-      background-color:
-        lighten($navbar-color, 10%);
-    }
-  }
-}
-
-    </code></pre>
+    <table class="scss-css">
+        <tr>
+            <td><code><pre loadFile="variables1.scss" class="lang-css"></pre></code></td>
+            <td><code><pre loadFile="variables1.css" class="lang-scss"></pre></code></td>
+        </tr>
+    </table>
+    
+    
 </body>
 </html>

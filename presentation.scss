@@ -6,4 +6,23 @@ body code {
 	font-family: Consolas, "Lucida Console", Monaco, monospace
 }
 
-pre { clear: both;margin: 1em;}
+pre { 
+	clear: both;
+	margin: 1em;
+	padding: 30px;
+	border :{
+		radius:15px;
+		width: 5px;
+		style:solid;
+	}
+}
+
+.lang-scss {border-color:red;}
+.lang-css {border-color:blue;}
+
+table.scss-css {
+	clear:both; 
+	td {
+		vertical-align:top;
+	}
+}

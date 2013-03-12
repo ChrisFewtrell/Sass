@@ -6,5 +6,20 @@ body code {
 
 pre {
   clear: both;
-  margin: 1em; }
+  margin: 1em;
+  padding: 30px;
+  border-radius: 15px;
+  border-width: 5px;
+  border-style: solid; }
+
+.lang-scss {
+  border-color: red; }
+
+.lang-css {
+  border-color: blue; }
+
+table.scss-css {
+  clear: both; }
+  table.scss-css td {
+    vertical-align: top; }
 
