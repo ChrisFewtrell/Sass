@@ -11,10 +11,11 @@
                 $el.text(data);
                 return;
             }
-            $el.text(data);
+            //$el.text(data);
             console.log("prettyprint");
-            prettyPrint();
-            //$el.html(html);
+            var html = prettyPrintOne(data);
+            //prettyPrint();
+            $el.addClass("prettyprinted").html(html);
         });
         return promise;
     };
