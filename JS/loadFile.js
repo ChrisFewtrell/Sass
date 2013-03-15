@@ -11,11 +11,9 @@
                 $el.text(data);
                 return;
             }
-            //$el.text(data);
             console.log("prettyprint");
-            var html = prettyPrintOne(data);
-            //prettyPrint();
-            $el.addClass("prettyprinted").html(html);
+            var html = prettyPrintOne(data, "css");
+            $el.addClass("prettyprinted prettyprint").html(html);
         });
         return promise;
     };
@@ -37,6 +35,7 @@
         var $pre = $("<pre class='prettyprint lang-html' />").text(html);
         var $code = $("<code/>").append($pre);
         $("#html-snippet").append($code);
+        prettyPrint();
     };
     $(displayHtmlSnippet);
     $(loadCssAndScss);
