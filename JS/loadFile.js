@@ -19,7 +19,7 @@
         return promise;
     };
 
-    var loadAllFiles = function () {
+    var loadCssAndScss = function () {
         var elementsToLoad = $("[" + loadfileAttribute + "]");
         
         console.log("load all files:" + elementsToLoad.length);
@@ -27,11 +27,16 @@
             loadFile.apply(this);
         });
     };
-    
-    $(loadAllFiles);
-    $(function () {
-        var html = $("#html-source").html().trim();
-        var $pre = $("<pre class='prettyPrint' />").text(html);
-        $("#html-snippet").append($pre);
-    });
+    var displayHtmlSnippet = function () {
+        var $source = $("#html-source");
+        if ($source.length === 0) {
+            return;
+        }
+        var html = $source.html().trim();
+        var $pre = $("<pre class='prettyprint lang-html' />").text(html);
+        var $code = $("<code/>").append($pre);
+        $("#html-snippet").append($code);
+    };
+    $(displayHtmlSnippet);
+    $(loadCssAndScss);
 })(jQuery);

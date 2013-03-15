@@ -1,20 +1,19 @@
-﻿#navbar {
-  $navbar-width: 600px;
+﻿#outer {
+  $width: 600px;
   $items: 3;
-  $navbar-color: #ce4dd6;
+  $color: #ce4dd6;
 
-  width: $navbar-width;
-  border: 5px solid $navbar-color;
+  width: $width;
+  border: 5px solid $color;
   float:left;
-
-  li {
-    width: $navbar-width/$items - 10px;
+  p {
+    width: $width/$items;
 	float:left;
-    background-color:
-      lighten($navbar-color, 20%);
+	margin:0px;
+    background-color:lighten($color, 20%);
     &:hover {
       background-color:
-        lighten($navbar-color, 10%);
+        lighten($color, 10%);
     }
   }
 }

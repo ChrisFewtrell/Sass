@@ -18,6 +18,9 @@ pre {
 .lang-css {
   border-color: blue; }
 
+.lang-html {
+  border-color: green; }
+
 table.scss-css {
   clear: both; }
   table.scss-css td {

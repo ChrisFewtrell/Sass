@@ -1,11 +1,12 @@
-#navbar {
+#outer {
   width: 600px;
   border: 5px solid #ce4dd6;
   float: left; }
-  #navbar li {
-    width: 190px;
+  #outer p {
+    width: 200px;
     float: left;
+    margin: 0px;
     background-color: #e5a0e9; }
-    #navbar li:hover {
+    #outer p:hover {
       background-color: #d976e0; }
 
