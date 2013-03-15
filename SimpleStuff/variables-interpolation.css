@@ -1,12 +1,21 @@
-.puma-icon {
-  background-image: url("/images/puma.png"); }
+li {
+  background-colour: red; }
 
-.sea-slug-icon {
-  background-image: url("/images/sea-slug.png"); }
+li:nth-child(0) {
+  background-color: red; }
 
-.egret-icon {
-  background-image: url("/images/egret.png"); }
+li:nth-child(1) {
+  background-color: #ff3333; }
 
-.salamander-icon {
-  background-image: url("/images/salamander.png"); }
+li:nth-child(2) {
+  background-color: #ff6666; }
+
+li:nth-child(3) {
+  background-color: #ff9999; }
+
+li:nth-child(4) {
+  background-color: #ffcccc; }
+
+li:nth-child(5) {
+  background-color: white; }
 

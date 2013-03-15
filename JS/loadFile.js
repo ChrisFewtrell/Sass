@@ -12,8 +12,8 @@
                 return;
             }
             $el.text(data);
-            //console.log("prettyPrint");
-            //var html = prettyPrintOne(data);
+            console.log("prettyprint");
+            prettyPrint();
             //$el.html(html);
         });
         return promise;
@@ -21,7 +21,7 @@
 
     var loadAllFiles = function () {
         var elementsToLoad = $("[" + loadfileAttribute + "]");
-
+        
         console.log("load all files:" + elementsToLoad.length);
         $.each(elementsToLoad, function () {
             loadFile.apply(this);
@@ -29,4 +29,9 @@
     };
     
     $(loadAllFiles);
+    $(function () {
+        var html = $("#html-source").html().trim();
+        var $pre = $("<pre class='prettyPrint' />").text(html);
+        $("#html-snippet").append($pre);
+    });
 })(jQuery);

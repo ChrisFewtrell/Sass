@@ -1,5 +1,4 @@
-﻿@each $animal in puma, sea-slug, egret, salamander {
-  .#{$animal}-icon {
-    background-image: url('/images/#{$animal}.png');
-  }
+﻿li {background-colour: red;}
+@for $i from 0 through 5 {
+  li:nth-child(#{$i}) {background-color: lighten(red, $i * 10%);}
 }
