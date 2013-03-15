@@ -35,4 +35,11 @@
     <setting name="CompileStyle">Nested</setting>
     <setting name="DebugInfo">False</setting>
   </file>
+  <file name="variables-operators.scss">
+    <setting name="Compile">True</setting>
+    <setting name="Minify">True</setting>
+    <setting name="OutputFolder" />
+    <setting name="CompileStyle">Nested</setting>
+    <setting name="DebugInfo">False</setting>
+  </file>
 </web-workbench>
