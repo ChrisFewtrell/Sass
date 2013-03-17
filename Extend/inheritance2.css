@@ -1,15 +1,3 @@
-#html-source {
-  line-height: 2em; }
-
-.error, .seriousError {
-  border: solid 1px #f00;
-  font-style: italic; }
-
-.error.intrusion, .intrusion.seriousError {
-  background-image: url("hacked.jpg");
-  color: yellow;
-  height: 100px; }
-
-.seriousError {
-  border-width: 5px; }
+div p a, div p .foo {
+  color: red; }
 

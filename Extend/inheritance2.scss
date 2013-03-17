@@ -1,19 +1,2 @@
-﻿#html-source
-{
-	line-height:2em;
-}
-.error {
-  border: solid 1px #f00;
-  font-style:italic;
-}
-
-.error.intrusion {
-  background-image: url("hacked.jpg");
-  color:yellow;
-  height:100px;
-}
-
-.seriousError {
-  @extend .error;
-  border-width: 5px;
-}
+﻿div p a { color: red; }
+.foo { @extend a; }
