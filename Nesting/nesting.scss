@@ -1,12 +1,16 @@
-﻿#main {
+﻿//* scss-compile-options: --style expanded
+// compact, compressed, indented, expanded
+#main {
   width: 97%;
 
   p, div {
     font-size: 2em;
     a { 
-		font-weight: bold;
-		&:hover{background-color:yellow;} 
-	}
+      font-weight: bold;
+      &:hover {
+        background-color:yellow;
+      } 
+    }
   }
 
   pre { font-size: 3em; }
