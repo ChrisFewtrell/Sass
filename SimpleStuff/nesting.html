@@ -11,26 +11,28 @@
     <script src="../JS/loadFile.js"></script>
 </head>
 <body>
-    <h1>Simple Sassy Features: Variables</h1>
-    <section id="html-source">
-<div id="main">
-    <p>donkey donkey donkey donkey 
-        donkey donkey donkey</p>
-    <p>
-        <span class="redbox">Has redbox class</span>       
-    </p>
-    <p>mule mule mule</p>
-</div>
-    </section>
+    <h1>Simple Sassy Features: Nesting</h1>
 
     <table class="scss-css">
-        <tr>
-            <td><section id="html-snippet"></section></td>           
-        </tr>
         <tr>
             <td><code><pre loadFile="nesting.scss" class="lang-scss"></pre></code></td>
             <td><code><pre loadFile="nesting.css" class="lang-css"></pre></code></td>
         </tr>
+        <tr>
+            <td colspan="2"><section id="html-snippet"></section></td>           
+        </tr>
     </table>
+    
+        <section id="html-source">
+<div id="main">
+    <p>donkey donkey donkey donkey 
+        donkey donkey donkey</p>
+    <div>
+        <a href="nesting.html">Link</a>
+    </div>
+    <span>mule mule mule</span>
+</div>
+    </section>
+
 </body>
 </html>

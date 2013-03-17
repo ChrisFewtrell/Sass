@@ -1,9 +1,22 @@
-﻿#main p {
-  color: #0000ff;
+﻿#main {
   width: 97%;
 
-  .redbox {
-    background-color: #ff0000;
-    color: #000000;
+  p, div {
+    font-size: 2em;
+    a { 
+		font-weight: bold;
+		&:hover{background-color:yellow;} 
+	}
+  }
+
+  pre { font-size: 3em; }
+}
+
+// example of nesting properties
+.funky {
+  font: 2px/3px {
+    family: fantasy;
+    size: 30em;
+    weight: bold;
   }
 }
