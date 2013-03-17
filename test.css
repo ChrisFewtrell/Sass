@@ -1,0 +1,20 @@
+pre {
+  clear: both;
+  margin: 5px;
+  padding: 15px 20px;
+  border-radius: 15px;
+  border-width: 123px;
+  border-style: solid; }
+
+.puma-icon {
+  background-image: url("/images/puma.png"); }
+
+.sea-slug-icon {
+  background-image: url("/images/sea-slug.png"); }
+
+.egret-icon {
+  background-image: url("/images/egret.png"); }
+
+.salamander-icon {
+  background-image: url("/images/salamander.png"); }
+

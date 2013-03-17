@@ -1,0 +1,18 @@
+﻿
+pre { 
+	$var:123px;
+	clear: both;
+	margin: 5px;
+	padding: 15px 20px;
+	border :{
+		radius:15px;
+		width: $var;
+		style:solid;
+	}
+}
+
+@each $animal in puma, sea-slug, egret, salamander {
+  .#{$animal}-icon {
+    background-image: url('/images/#{$animal}.png');
+  }
+}
