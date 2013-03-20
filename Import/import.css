@@ -1,8 +1,9 @@
-/* This is defined in import2.scss */
+/* This is defined in _import2.scss */
 .import2-style {
   color: blue; }
 
-/* This is defined in import3.scss */
+/* This is defined in _import3.scss.
+   _ means that this is a "partial". */
 .import3-style {
   color: blue; }
 
