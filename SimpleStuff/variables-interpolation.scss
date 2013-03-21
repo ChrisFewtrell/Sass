@@ -1,4 +1,6 @@
 ﻿li {background-colour: red;}
 @for $i from 0 through 5 {
-  li:nth-child(#{$i}) {background-color: lighten(red, $i * 10%);}
+  li:nth-child(#{$i}) {
+    background-color: lighten(red, $i * 10%);
+  }
 }

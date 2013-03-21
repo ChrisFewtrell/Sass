@@ -9,6 +9,6 @@ $y:10%;
 // Sass will do unit conversion if it can
 #add2	{width:6pt + 3px;}
 
-// this will cause an error because the units of
-// x and y do not match.
+// this will cause an error because 
+// the units of x and y do not match.
 // #error {width:$x+$y;}  

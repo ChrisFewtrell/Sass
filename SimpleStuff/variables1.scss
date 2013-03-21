@@ -8,8 +8,8 @@
   float:left;
   p {
     width: $width/$items;
-	float:left;
-	margin:0px;
+    float:left;
+    margin:0px;
     background-color:lighten($color, 20%);
     &:hover {
       background-color:
